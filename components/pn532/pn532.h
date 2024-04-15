@@ -134,6 +134,7 @@ typedef struct {
     uint8_t _key[6];       // Mifare Classic key
     uint8_t _inListedTag;  // Tg number of inlisted tag.
 
+    // spi_device_handle_t dev;
 } pn532_t;
 
 void pn532_spi_init(pn532_t *obj, uint8_t clk, uint8_t miso, uint8_t mosi, uint8_t ss);
